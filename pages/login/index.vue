@@ -1,8 +1,8 @@
 <template>
   <div class="card card-outline card-info">
     <div class="card-header text-center">
-      <nuxt-link to="/" class="h1 font-weight-bold text-dark">PORTAL</nuxt-link>
-      <div><i>Informasi Terbaru Masa Kini</i></div>
+      <nuxt-link to="/" class="h5 font-weight-bold text-dark">PORTAL.HELMISALSABILA.COM</nuxt-link>
+      <div><i>Portal Edukasi & Informasi Masa Kini</i></div>
     </div>
     <div class="card-body">
       <div v-if="validation.message" class="mt-2">

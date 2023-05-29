@@ -13,8 +13,8 @@
               {{ post.description.substr(0, 55) }}...
             </b-card-text>
             <b-card-text>
-              <small class="text-muted"><i class="fas fa-pen mr-1"></i><strong> {{ post.user.name }}</strong></small>
-              <small class="text-muted">- Dilihat <strong>{{ post.views }}</strong> kali</small>
+              <small class="text-muted"><i class="fas fa-pen mr-1"></i> {{ post.user.name }}</small>
+              <small class="text-muted">- Dilihat {{ post.views }} kali</small>
             </b-card-text>
           </b-card>
         </b-col>

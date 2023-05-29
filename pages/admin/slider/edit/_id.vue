@@ -8,7 +8,7 @@
       <section class="content">
         <div class="card card-outline card-info">
           <div class="card-header">
-            <h3 class="card-title"><i class="nav-icon fa fa-images mr-1"></i> TAMBAH SLIDER</h3>
+            <h3 class="card-title"><i class="nav-icon fa fa-images mr-1"></i> EDIT SLIDER</h3>
             <div class="card-tools">
               <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
                 <i class="fas fa-minus"></i>
@@ -19,17 +19,14 @@
             </div>
           </div>
           <div class="card-body">
-            <form @submit.prevent="storeSlider">
+            <form @submit.prevent="updateSlider">
   
               <div class="form-group">
                 <label>GAMBAR SLIDER</label>
                 <input type="file" @change="handleFileChange" class="form-control btn-sm">
-                <div v-if="validation.image" class="mt-2">
-                  <b-alert show variant="danger">{{ validation.image[0] }}</b-alert>
-                </div>
               </div>
   
-              <button class="btn btn-info mr-1 btn-submit" type="submit"><i class="fa fa-paper-plane mr-1"></i> SIMPAN</button>
+              <button class="btn btn-info mr-1 btn-submit" type="submit"><i class="fa fa-paper-plane mr-1"></i> UPDATE</button>
               <button class="btn btn-warning btn-reset" type="reset"><i class="fa fa-redo mr-1"></i> RESET</button>
   
             </form>
@@ -47,7 +44,7 @@
           //meta
       head() {
         return {
-          title: 'Tambah Slider - portal.helmisalsabila.com',
+          title: 'Edit Slider - portal.helmisalsabila.com',
         }
       },
   
@@ -60,6 +57,16 @@
           //state validation
           validation: []
         }
+      },
+      
+      mounted() {
+        //fetching data category by ID
+        this.$axios.get(`/api/admin/sliders/${this.$route.params.id}`)
+        
+        .then(response => {  
+            //assing response data to state "category"
+            this.slider.image = response.data.data.image
+        })
       },
   
       methods: {
@@ -90,15 +97,16 @@
         },
   
         //storeSlider method
-        async storeSlider() {
+        async updateSlider() {
   
           //define formData
           let formData = new FormData();
   
           formData.append('image', this.slider.image)
+          formData.append("_method", "PATCH")
   
           //sending data to server
-          await this.$axios.post('/api/admin/sliders', formData)
+          await this.$axios.post(`/api/admin/sliders/${this.$route.params.id}`, formData)
             .then(() => {
   
               //sweet alert

@@ -50,7 +50,7 @@
             </b-table>
   
             <!-- pagination -->
-            <b-pagination v-model="pagination.current_page" :total-rows="pagination.total" :per-page="pagination.per_page" @change="changePage" align="right" class="mt-3"></b-pagination>
+            <b-pagination v-model="pagination.current_page" :total-rows="pagination.total" :per-page="pagination.per_page" @change="changePage" size="sm" align="right" class="mt-3"></b-pagination>
   
           </div>
         </div>

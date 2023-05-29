@@ -16,8 +16,8 @@
               {{ post.description.substr(0, 55) }}...
             </b-card-text>
             <b-card-text>
-              <small class="text-muted mr-3"><i class="fa fa-eye mr-1"></i>{{ post.views }}x Dilihat</small>
-              <small class="text-muted"><i class="fa fa-comments mr-1"></i>{{ post.comments.length }} Komentar</small>
+              <small class="text-muted"><i class="fas fa-pen mr-1"></i> {{ post.user.name }}</small>
+              <small class="text-muted">- Dilihat {{ post.views }} kali</small>
             </b-card-text>
           </b-card>
         </b-col>

@@ -24,7 +24,7 @@
             <b-col md="3">
               <h6>JELAJAHI</h6>
               <hr>
-              <p><a href="https://helmisalsabila.com/" target="_blank" class="text-white">Portfolio</a></p>
+              <p><a href="https://helmisalsabila.com/" target="_blank" class="text-white">Profil</a></p>
             </b-col>
             <b-col md="3">
               <h6>DUKUNGAN</h6>

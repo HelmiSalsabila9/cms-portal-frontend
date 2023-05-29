@@ -15,7 +15,7 @@
             </b-card-text>
             <div v-html="post.content"></div>
             <hr>
-            <nuxt-link :to="{name: 'tag-slug', params:{slug: tag.slug}}" class="badge badge-info btn-sm mb-2 mr-2 shadow-sm" v-for="tag in post.tags" :key="tag.id">{{ tag.name }}</nuxt-link>
+            <nuxt-link :to="{name: 'tag-slug', params:{slug: tag.slug}}" class="tag-badge badge badge-light btn-sm mb-2 mr-2 shadow-sm" v-for="tag in post.tags" :key="tag.id" :style="{ backgroundColor: getRandomColor() }">{{ tag.name }}</nuxt-link>
           </b-card>
 
           <b-card no-body>
@@ -36,11 +36,11 @@
                 </b-col>
                 <b-col md="10" sm="12">
                   <h4 class="text-bold mt-3">Helmi Salsabila <svg data-bs-toggle="tooltip" data-bs-placement="right" style="width:24px;height:24px" viewBox="0 0 24 24" data-bs-original-title="" title=""><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z" fill="#568af5"></path></svg></h4>
-                  <h6 class="text-muted">Content Creator, CEO & CO-Founder Portal.HelmiSalsabila.com</h6>
+                  <h6 class="text-muted">Content Creator, CEO & Co-Founder Portal.HelmiSalsabila.com</h6>
                 </b-col>
               </b-row>
               <hr>
-              <h6>Suka dengan Artikelya?</h6>
+              <h6>Suka dengan Artikelnya?</h6>
               <h6>Kamu bisa memberikan dukungan dengan berdonasi atau membagikan artikel ini ke sosial media. Terimakasih atas dukungan anda semoga Allah SWT membalas kebaikan Anda.</h6><br>
               <p class="text-center">
                 <a href="https://trakteer.id/helmisalsabila" target="_blank" class="donasi-trakteer font-weight-bold text-decoration-none"><svg class="mr-1" aria-hidden="true" fill="currentColor" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M17.726 13.02 14 16H9v-1h4.065a.5.5 0 0 0 .416-.777l-.888-1.332A1.995 1.995 0 0 0 10.93 12H3a1 1 0 0 0-1 1v6a2 2 0 0 0 2 2h9.639a3 3 0 0 0 2.258-1.024L22 13l-1.452-.484a2.998 2.998 0 0 0-2.822.504zm1.532-5.63c.451-.465.73-1.108.73-1.818s-.279-1.353-.73-1.818A2.447 2.447 0 0 0 17.494 3S16.25 2.997 15 4.286C13.75 2.997 12.506 3 12.506 3a2.45 2.45 0 0 0-1.764.753c-.451.466-.73 1.108-.73 1.818s.279 1.354.73 1.818L15 12l4.258-4.61z"/></svg> TRAKTEER</a>
@@ -139,7 +139,7 @@
             <b-card-body>
               <h6 class="text-bold"><svg enable-background="new 0 0 48 48" class="mr-1" aria-hidden="true" height="22" id="Layer_1" version="1.1" viewBox="0 0 48 48" width="22" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path clip-rule="evenodd" d="M46.996,24.983v0.021c0,0.32-0.16,0.593-0.395,0.776L27.662,44.719  c-0.381,0.381-0.998,0.381-1.381,0c-0.381-0.382-0.381-1,0-1.381l18.715-18.715v-6.619c0-0.552,0.449-1,1-1c0.553,0,1,0.448,1,1  v6.973C46.996,24.979,46.996,24.98,46.996,24.983z M19.806,46.575c-0.032,0.048-0.053,0.102-0.095,0.144  c-0.197,0.196-0.457,0.287-0.715,0.281c-0.258,0.006-0.518-0.085-0.715-0.281c-0.042-0.042-0.062-0.096-0.095-0.144L1.425,29.813  c-0.048-0.032-0.101-0.053-0.144-0.095C1.084,29.521,0.995,29.262,1,29.004c-0.006-0.258,0.084-0.518,0.281-0.715  c0.043-0.042,0.096-0.062,0.144-0.095L24.221,5.398c0.183-0.234,0.455-0.395,0.775-0.395h0.021c0.002,0,0.004,0,0.006,0h4.029  c0.133-1.502,0.746-2.82,1.67-3.683l0.016,0.018c0.195-0.207,0.463-0.335,0.758-0.335c0.592,0,1.072,0.512,1.072,1.143  c0,0.375-0.18,0.691-0.441,0.899c-0.479,0.442-0.82,1.139-0.934,1.958h4.775c0.002,0,0.004,0,0.008,0h0.02  c0.32,0,0.594,0.16,0.775,0.395l5.83,5.83c0.234,0.183,0.395,0.456,0.395,0.776v0.021c0,0.002,0,0.004,0,0.006v10.945  c0,0.002,0,0.004,0,0.007v0.021c0,0.32-0.16,0.593-0.395,0.775L19.806,46.575z M40.996,12.385l-5.381-5.381h-4.213  c0.176,0.444,0.424,0.822,0.725,1.1l0,0c0.041,0.033,0.092,0.053,0.127,0.092l0.018-0.018c1.041,0.973,1.725,2.508,1.725,4.254  c0,0.042-0.01,0.079-0.012,0.12c1.197,0.691,2.012,1.97,2.012,3.452c0,2.209-1.791,4-4,4s-4-1.791-4-4  c0-2.147,1.695-3.885,3.82-3.982c-0.09-0.888-0.441-1.648-0.949-2.118c-0.041-0.033-0.092-0.053-0.129-0.092L30.723,9.83  c-0.744-0.695-1.293-1.685-1.553-2.826h-3.793l-22,22l15.619,15.619l22-22V12.385z M30.867,14.961  c0.248-0.229,0.451-0.537,0.617-0.883c-0.855,0.228-1.488,1-1.488,1.925c0,1.104,0.896,2,2,2c1.105,0,2-0.896,2-2  c0-0.473-0.17-0.901-0.445-1.244c-0.615,1.545-1.297,1.909-1.297,1.909c-0.193,0.207-0.461,0.334-0.758,0.334  c-0.592,0-1.07-0.512-1.07-1.143C30.426,15.486,30.605,15.17,30.867,14.961z M12.282,27.289c0.382-0.381,1-0.381,1.381,0  l7.049,7.049c0.381,0.381,0.381,0.999,0,1.381c-0.381,0.381-1,0.381-1.381,0l-7.049-7.049  C11.901,28.289,11.901,27.671,12.282,27.289z M16.282,23.289c0.382-0.381,1-0.381,1.381,0l7.049,7.049  c0.38,0.381,0.38,0.999,0,1.381c-0.381,0.381-1,0.381-1.381,0l-7.049-7.049C15.901,24.289,15.901,23.671,16.282,23.289z" fill-rule="evenodd"/></svg> TAG</h6>
               <hr>
-              <nuxt-link :to="{name: 'tag-slug', params:{slug: tag.slug}}" class="badge badge-light btn-sm mb-2 mr-2 shadow-sm" v-for="tag in tags" :key="tag.id">{{ tag.name }}</nuxt-link>
+              <nuxt-link :to="{name: 'tag-slug', params:{slug: tag.slug}}" class="tag-badge badge badge-light btn-sm mb-2 mr-2 shadow-sm" v-for="tag in tags" :key="tag.id" :style="{ backgroundColor: getRandomColor() }">{{ tag.name }}</nuxt-link>
             </b-card-body>
           </b-card>
   
@@ -212,18 +212,28 @@
       */
       data() {
           return {
-              //state comment
-              comment: {
-                name: '',
-                email: '',
-                comment: ''
-              },
+            //state comment
+            comment: {
+              name: '',
+              email: '',
+              comment: ''
+            },
               //state validation
-              validation: []
+            validation: [],
+            tags: [],
           }
       },
   
       methods: {
+
+        getRandomColor() {
+          const letters = '0123456789ABCDEF';
+          let color = '#';
+          for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+          }
+          return color;
+        },
   
         //metthod storeComment
         async storeComment() {
@@ -273,6 +283,12 @@
 </script>
   
 <style>
+
+  .tag-badge {
+    display: inline-block;
+    color: #fff;
+  }
+
   .donasi-trakteer {
     width: 150px;
     height: 50px;

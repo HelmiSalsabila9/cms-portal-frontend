@@ -34,13 +34,13 @@
                 <img class="img-fluid img-thumbnail" width="400" :src="data.item.image" />
               </template>
               <template v-slot:cell(actions)="row">
+                <b-button :to="{name: 'admin-slider-edit-id', params: {id: row.item.id}}" variant="info" size="sm">EDIT</b-button>
                 <b-button variant="danger" size="sm" @click="deleteSlider(row.item.id)">DELETE</b-button>
               </template>
             </b-table>
   
             <!-- pagination -->
-            <b-pagination v-model="pagination.current_page" :total-rows="pagination.total" :per-page="pagination.per_page"
-              @change="changePage" align="right" class="mt-3"></b-pagination>
+            <b-pagination v-model="pagination.current_page" :total-rows="pagination.total" :per-page="pagination.per_page" @change="changePage" size="sm" align="right" class="mt-3"></b-pagination>
   
           </div>
         </div>
@@ -159,4 +159,5 @@
     .small-column {
       width: 0px;
     }
+    
 </style>
