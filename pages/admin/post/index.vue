@@ -34,6 +34,9 @@
   
             <!-- table -->
             <b-table striped bordered hover :items="posts" :fields="fields" show-empty>
+                <template v-slot:cell(index)="row">
+                  {{ row.index + 1 }}
+                </template>
                 <template v-slot:cell(comments)="row">
                   <i class="fa fa-comments mr-1"></i> {{ row.item.comments.length }}
                 </template>
@@ -73,6 +76,11 @@
           
           //table header
           fields: [
+            {
+              label: '#',
+              key: 'index',
+              tdClass: 'small-column'
+            },
             {
               label: 'Judul Post',
               key: 'title',
@@ -191,5 +199,7 @@
 </script>
   
 <style>
-  
+    .small-column {
+      width: 0px;
+    }
 </style>

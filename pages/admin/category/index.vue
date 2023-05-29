@@ -38,6 +38,9 @@
   
             <!-- table -->
             <b-table striped bordered hover :items="categories" :fields="fields" show-empty>
+              <template v-slot:cell(index)="row">
+                {{ row.index + 1 }}
+              </template>
               <template v-slot:cell(image)="data">
                 <img class="img-fluid" width="50" :src="data.item.image" />
               </template>
@@ -75,7 +78,13 @@
         return {
   
           //table header
-          fields: [{
+          fields: [
+            {
+              label: '#',
+              key: 'index',
+              tdClass: 'small-column'
+            },
+            {
               label: 'Gambar',
               key: 'image',
               tdClass: 'text-center'
@@ -180,5 +189,9 @@
 </script>
   
 <style>
+
+    .small-column {
+      width: 0px;
+    }
   
 </style>

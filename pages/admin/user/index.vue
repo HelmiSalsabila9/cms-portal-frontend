@@ -37,6 +37,9 @@
   
             <!-- table -->
             <b-table striped bordered hover :items="users" :fields="fields" show-empty>
+              <template v-slot:cell(index)="row">
+                {{ row.index + 1 }}
+              </template>
               <template v-slot:cell(actions)="row">
                 <b-button :to="{name: 'admin-user-edit-id', params: {id: row.item.id}}" variant="info" size="sm">EDIT</b-button>
                 <b-button variant="danger" size="sm" @click="deleteUser(row.item.id)">DELETE</b-button>
@@ -72,7 +75,13 @@
         return {
           
           //table header
-          fields: [{
+          fields: [
+            {
+              label: '#',
+              key: 'index',
+              tdClass: 'small-column'
+            },
+            {
               label: 'Nama Pengguna',
               key: 'name',
             },
@@ -179,5 +188,8 @@
 </script>
   
 <style>
-  
+
+    .small-column {
+      width: 0px;
+    }
 </style>

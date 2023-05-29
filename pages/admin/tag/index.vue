@@ -75,8 +75,9 @@
         //table header
         fields: [
           {
-            label: 'No',
-            key: 'index'
+            label: '#',
+            key: 'index',
+            tdClass: 'small-column',
           },
           {
             label: 'Nama Tag',
@@ -177,5 +178,9 @@
 </script>
 
 <style>
+
+      .small-column {
+        width: 0px;
+      }
 
 </style>
