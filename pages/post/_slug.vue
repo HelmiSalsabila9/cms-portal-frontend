@@ -7,13 +7,16 @@
             <hr>
             <b-img :src="post.image" class="rounded-lg w-100"></b-img>
             <b-card-text class="mt-3">
-              <small class="text-muted mr-3"><i class="fa fa-calendar mr-1"></i> {{ post.created_at }} </small>
-              <small class="text-muted mr-3"><i class="fa fa-user mr-1"></i> {{ post.user.name }}</small>
+              <small class="text-muted mr-3"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event mr-1" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M16 3l0 4"></path><path d="M8 3l0 4"></path><path d="M4 11l16 0"></path><path d="M8 15h2v2h-2z"></path></svg>{{ post.created_at }}</small>
+
+              <small class="text-muted mr-3"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user mr-1" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path></svg>{{ post.user.name }}</small>
               <small class="text-muted mr-3"><i class="fas fa-list mr-1"></i> {{ post.category.name }}</small>
               <small class="text-muted mr-3"><i class="fa fa-comments mr-1"></i> {{ post.comments.length }} Komentar</small>
               <small class="text-muted mr-3"><i class="fa fa-eye mr-1"></i> {{ post.views }}x Dilihat</small>
             </b-card-text>
-            <div v-html="post.content"></div>
+
+            <div v-html="post.content" class="ckeditor-content"></div>
+
             <hr>
             <nuxt-link :to="{name: 'tag-slug', params:{slug: tag.slug}}" class="tag-badge badge badge-light btn-sm mb-2 mr-2 shadow-sm" v-for="tag in post.tags" :key="tag.id" :style="{ backgroundColor: getRandomColor() }">{{ tag.name }}</nuxt-link>
           </b-card>
@@ -283,6 +286,19 @@
 </script>
   
 <style>
+
+  .ckeditor-content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  @media (max-width: 768px) {
+    .ckeditor-content img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
 
   .tag-badge {
     display: inline-block;

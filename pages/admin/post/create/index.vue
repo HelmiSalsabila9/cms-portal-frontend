@@ -48,7 +48,7 @@
               <div class="form-group">
                 <label>KONTEN POST</label>
                 <client-only placeholder="loading...">
-                  <ckeditor-nuxt v-model="post.content" :config="editorConfig" />
+                  <ckeditor-nuxt v-model="post.content" :config="editorConfig"/>
                 </client-only>
                 <div v-if="validation.content" class="mt-2">
                   <b-alert show variant="danger">{{ validation.content[0] }}</b-alert>
@@ -125,7 +125,7 @@
             removePlugins: ['Title'],
             simpleUpload: {
               uploadUrl: 'http://localhost:8000/api/web/posts/storeImage'
-            }
+            },
           }
         }
       },
@@ -241,4 +241,5 @@
     .ck-editor__editable {
       min-height: 200px;
     }
+
 </style>
