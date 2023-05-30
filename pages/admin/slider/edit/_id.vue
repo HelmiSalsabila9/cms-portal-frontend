@@ -60,11 +60,9 @@
       },
       
       mounted() {
-        //fetching data category by ID
         this.$axios.get(`/api/admin/sliders/${this.$route.params.id}`)
         
         .then(response => {  
-            //assing response data to state "category"
             this.slider.image = response.data.data.image
         })
       },
