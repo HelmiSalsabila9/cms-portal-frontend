@@ -61,10 +61,9 @@
       
       mounted() {
         this.$axios.get(`/api/admin/sliders/${this.$route.params.id}`)
-        
-        .then(response => {  
+          .then(response => {  
             this.slider.image = response.data.data.image
-        })
+          })
       },
   
       methods: {

@@ -8,7 +8,7 @@
       <section class="content">
         <div class="card card-outline card-info">
           <div class="card-header">
-            <h3 class="card-title"><i class="nav-icon fas fa-folder"></i> EDIT CATEGORY</h3>
+            <h3 class="card-title"><i class="nav-icon fas fa-folder"></i> EDIT KATEGORI</h3>
             <div class="card-tools">
               <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
                 <i class="fas fa-minus"></i>
@@ -52,7 +52,7 @@
           //meta
       head() {
         return {
-          title: 'Edit Category - SantriKoding.com - Belajar Koding Bahasa Indonesia Terlengkap',
+          title: 'Edit Kategori - portal.helmisalsabila.com',
         }
       },
   

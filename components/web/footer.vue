@@ -2,12 +2,12 @@
     <footer class="footer-top pt-4">
         <b-container>
           <b-row>
-            <b-col md="3">
+            <b-col md="3" class="mb-3">
               <h6>TENTANG</h6>
               <hr>
               <a href="https://helmisalsabila.com/" target="_blank"><b-img src="https://i.imgur.com/XkrfJfo.png" width="150"></b-img></a>
               <p class="mt-3 mb-3"><small>Portal ini dibuat bertujuan untuk edukasi dan memberikan informasi yang semoga bermanfaat buat teman-teman semua.</small></p>
-              <p class="mt-3 mb-3">
+              <p class="mt-3">
                 <a href="https://www.tiktok.com/@hels.id" target="_blank"><svg viewBox="0 0 256 256" class="mr-1" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><rect fill="none" /><path d="M168,106a95.9,95.9,0,0,0,56,18V84a56,56,0,0,1-56-56H128V156a28,28,0,1,1-40-25.3V89.1A68,68,0,1,0,168,156Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/></svg></a>
                 <a href="https://github.com/HelmiSalsabila9" target="_blank"><svg enable-background="new 0 0 512 512" height="22" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="22" class="text-white mr-1" fill="currentColor" aria-hidden="true" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path clip-rule="evenodd" d="M296.133,354.174c49.885-5.891,102.942-24.029,102.942-110.192   c0-24.49-8.624-44.448-22.67-59.869c2.266-5.89,9.515-28.114-2.734-58.947c0,0-18.139-5.898-60.759,22.669   c-18.139-4.983-38.09-8.163-56.682-8.163c-19.053,0-39.011,3.18-56.697,8.163c-43.082-28.567-61.22-22.669-61.22-22.669   c-12.241,30.833-4.983,53.057-2.718,58.947c-14.061,15.42-22.677,35.379-22.677,59.869c0,86.163,53.057,104.301,102.942,110.192   c-6.344,5.452-12.241,15.873-14.507,30.387c-12.702,5.438-45.808,15.873-65.758-18.592c0,0-11.795-21.31-34.012-22.669   c0,0-22.224-0.453-1.813,13.592c0,0,14.96,6.812,24.943,32.653c0,0,13.6,43.089,76.179,29.48v38.543   c0,5.906-4.53,12.702-15.865,10.89C96.139,438.977,32.2,354.626,32.2,255.77c0-123.807,100.216-224.022,224.03-224.022   c123.347,0,224.023,100.216,223.57,224.022c0,98.856-63.946,182.754-152.828,212.688c-11.342,2.266-15.873-4.53-15.873-10.89   V395.45C311.1,374.577,304.288,360.985,296.133,354.174L296.133,354.174z M512,256.23C512,114.73,397.263,0,256.23,0   C114.73,0,0,114.73,0,256.23C0,397.263,114.73,512,256.23,512C397.263,512,512,397.263,512,256.23L512,256.23z" fill="#fff" fill-rule="evenodd"/></g></svg></a>
                 <a href="https://www.linkedin.com/in/helmisalsabila9/" target="_blank"><svg height="26" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="26" aria-hidden="true" fill="currentColor" class="text-white rounded mr-1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><path class="st0" d="M182.8,384V212.9h-54.9V384H182.8L182.8,384z M157.4,187c18.3,0,29.7-13.1,29.7-29.5    c-0.3-16.7-11.4-29.5-29.4-29.5c-18,0-29.7,12.8-29.7,29.5c0,16.4,11.4,29.5,29,29.5H157.4L157.4,187z"/><path class="st0" d="M320.6,209c-29.1,0-41.6,16.4-49.6,27.8V213h-55v171h55v-97.4c0-5,0.4-10,1.9-13.5c4-10,13-20.3,28.2-20.3    c19.9,0,27.9,15.3,27.9,37.7V384h55v-99.9C384,232.8,356.8,209,320.6,209z"/></g><path d="M417.2,64H96.8C79.3,64,64,76.6,64,93.9v321.1c0,17.4,15.3,32.9,32.8,32.9h320.3c17.6,0,30.8-15.6,30.8-32.9V93.9   C448,76.6,434.7,64,417.2,64z M414,416c-1.1,0-313.1,0-314.9,0s-3.1-1.4-3.1-3.1S96,99.1,96,98s1-2,2-2s315,0,316,0s2,1,2,2   c0,23.3,0,314.9,0,316C416,414.9,415.1,416,414,416z"/></g></svg></a> 
@@ -16,12 +16,12 @@
                 <a href="mailto:helmisalsabila70@gmail.com" target="_blank"><svg aria-hidden="true" height="26" id="Layer_1" fill="currentColor" class="text-white mr-1" style="enable-background:new 0 0 56.7 56.7;" version="1.1" viewBox="0 0 56.7 56.7" width="26" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M53.1719,14.5953l0.0011-0.0011l-0.0011,0.0008v-1.184c0-2.2468-1.8384-4.0852-4.0853-4.0852l-0.0012,0.0011l-0.0024,0.0018  l0.0036-0.0029H7.3962l0.0161,0.0131l-0.0161-0.012c-2.2468,0-4.0853,1.8384-4.0853,4.0853v27.9073  c0,2.2468,1.8384,4.0851,4.0853,4.0851h1.4543h38.6578v-0.001c4.2856-0.0498,5.5728-1.1102,5.6702-4.0809L53.1719,14.5953z   M46.0429,10.3258L28.1753,23.487L10.4239,10.3258H46.0429z M9.8608,20.5521l16.5508,11.4004l0.0166,0.0115L9.8513,43.4907  L9.8608,20.5521z M10.2886,44.4046l17.0151-11.8314l0.2985,0.2077c0.1716,0.1194,0.3714,0.1792,0.5712,0.1792  c0.1982,0,0.8773-0.39,0.8773-0.39l17.0197,11.8345H10.2886z M46.4973,43.4836L29.9305,31.9641l9.2394-6.3642l7.3274-5.0472V43.4836  z"/></svg></a>
               </p>
             </b-col>
-            <b-col md="3">
+            <b-col md="3" class="mb-3">
               <h6>TAG</h6>
               <hr>
               <nuxt-link :to="{name: 'tag-slug', params:{slug: tag.slug}}" class="badge badge-light btn-sm mb-2 mr-2 shadow-sm" v-for="tag in tags" :key="tag.id">{{ tag.name }}</nuxt-link>
             </b-col>
-            <b-col md="3">
+            <b-col md="3" class="mb-3">
               <h6>JELAJAHI</h6>
               <hr>
               <p><a href="https://helmisalsabila.com/" target="_blank" class="text-white">Profil</a></p>
@@ -71,5 +71,13 @@
 </script>
   
 <style>
+
+    @media (max-width: 768px) {
+
+      .footer-bottom {
+        text-align: center;
+      }
+      
+    }
   
 </style>

@@ -42,7 +42,7 @@
                 {{ row.index + 1 }}
               </template>
               <template v-slot:cell(image)="data">
-                <img class="img-fluid" width="50" :src="data.item.image" />
+                <img class="img-fluid shadow-sm" width="50" :src="data.item.image" />
               </template>
               <template v-slot:cell(actions)="row">
                 <b-button :to="{name: 'admin-category-edit-id', params: {id: row.item.id}}" variant="info" size="sm">EDIT</b-button>
@@ -69,7 +69,7 @@
       //meta
       head() {
         return {
-          title: 'Kategpri - portal.helmisalsabila.com',
+          title: 'Kategori - portal.helmisalsabila.com',
         }
       },
   
