@@ -1,5 +1,5 @@
 <template>
-    <b-container class="mt-5 mb-5">
+    <b-container class="no-copy mt-5 mb-5">
       <b-row>
         <b-col md="12" class="mb-3">
           <h4>KATEGORI : <strong class="text-danger">{{ category.name.toUpperCase() }}</strong></h4>
@@ -66,5 +66,9 @@
 </script>
   
 <style>
+  
+  .no-select {
+    user-select: none;
+  }
   
 </style>
