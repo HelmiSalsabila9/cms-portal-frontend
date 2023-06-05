@@ -1,6 +1,6 @@
 <template>
     <div>
-        <b-container class="mt-5 mb-5">
+        <b-container class="no-copy mt-5 mb-5">
             <b-row>
                 <b-col md="12" sm="12">
                     <b-card no-body>
@@ -28,3 +28,15 @@
         </b-container>
     </div>
 </template>
+
+<script>
+
+</script>
+
+<style>
+    
+    .no-select {
+        user-select: none;
+    }
+
+</style>

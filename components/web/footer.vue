@@ -1,6 +1,6 @@
 <template>
     <footer class="footer-top pt-4">
-        <b-container>
+        <b-container class="no-copy">
           <b-row>
             <b-col md="3" class="mb-3">
               <h6>TENTANG</h6>
@@ -71,6 +71,10 @@
 </script>
   
 <style>
+
+    .no-select {
+      user-select: none;
+    }
 
     @media (max-width: 768px) {
 

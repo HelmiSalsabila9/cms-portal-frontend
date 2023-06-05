@@ -1,5 +1,5 @@
 <template>
-    <b-container class="mt-5 mb-5">
+    <b-container class="no-copy mt-5 mb-5">
       <b-row>
         <b-col md="8" sm="12">
           <b-card class="border-0 rounded-lg shadow-md mb-3">
@@ -286,6 +286,10 @@
 </script>
   
 <style>
+
+  .no-copy {
+    user-select: none;
+  }
 
   .ckeditor-content img {
     display: block;

@@ -1,5 +1,5 @@
 <template>
-    <b-container class="mt-5 mb-5">
+    <b-container class="no-copy mt-5 mb-5">
       <b-row>
         <b-col md="12" class="mb-3"><h4>TAG : <strong class="text-danger"> {{ tag.name.toUpperCase() }} </strong></h4></b-col>  
         <b-col md="4" class="mb-3" sm="12" v-for="post in posts" :key="post.id">
@@ -64,6 +64,8 @@
   }
 </script>
   
- <style>
-  
-  </style>
+<style>
+  .no-select {
+    user-select: none;
+  }
+</style>

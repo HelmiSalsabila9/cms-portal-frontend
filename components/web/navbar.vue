@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-jumbotron class="p-3 rounded-0 mb-0">
-      <b-container>
+      <b-container class="no-copy">
         <b-row class="mt-2">
             <b-col md="2" class="text-center">
               <a href="/"><b-img src="https://i.imgur.com/XkrfJfo.png" rounded="" width="250"></b-img></a>
@@ -25,7 +25,7 @@
 
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
-            <b-form-input v-model="search" @keypress.enter="searchData" size="sm" class="mr-sm-2 border-0" placeholder="Mau cari apa hari ini...">
+            <b-form-input v-model="search" @keypress.enter="searchData" size="sm" class="mr-sm-2 border-0" placeholder="Tulis kata kunci...">
             </b-form-input>
             <b-button @click="searchData" size="sm" class="my-2 my-sm-0" variant="primary">CARI</b-button>
           </b-navbar-nav>
@@ -75,6 +75,9 @@
 </script>
 
 <style>
-
+  
+  .no-select {
+    user-select: none;
+  }
 
 </style>

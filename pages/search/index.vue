@@ -1,5 +1,5 @@
 <template>
-    <b-container class="mt-5 mb-5">
+    <b-container class="no-copy mt-5 mb-5">
       <b-row>
         <b-col md="12" class="mb-3">
           <h4><i class="fas fa-search mr-1"></i> PENCARIAN : <strong class="text-danger"> {{ $route.query.q.toUpperCase() }} </strong></h4>
@@ -84,5 +84,7 @@
 </script>
   
 <style>
-  
+  .no-select {
+    user-select: none;
+  }
 </style>
