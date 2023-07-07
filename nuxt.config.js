@@ -129,6 +129,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    dir: 'nuxt-build',
     transpile: [
       'defu'
     ]
