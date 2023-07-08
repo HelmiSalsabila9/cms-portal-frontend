@@ -2,7 +2,8 @@
     <b-container class="no-copy mt-5 mb-5">
       <b-row>
         <b-col md="12" class="mb-3">
-          <h4><i class="fas fa-search mr-1"></i> PENCARIAN : <strong class="text-danger"> {{ $route.query.q.toUpperCase() }} </strong></h4>
+          <!-- <h4><i class="fas fa-search mr-1"></i> PENCARIAN : <strong class="text-danger"> {{ $route.query.q.toUpperCase() }} </strong></h4> -->
+          <h4><i class="fas fa-search mr-1"></i> PENCARIAN : <strong class="text-danger"> {{ $route.query.q ? $route.query.q.toUpperCase() : '' }} </strong></h4>
         </b-col>
         <b-col md="4" class="mb-3" sm="12" v-for="post in posts" :key="post.id">
           <b-card :img-src="post.image" img-top tag="article" class="mb-2 h-100 rounded-lg">
