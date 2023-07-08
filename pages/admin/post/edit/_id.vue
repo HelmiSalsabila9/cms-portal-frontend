@@ -124,7 +124,7 @@
           editorConfig: {
             removePlugins: ['Title'],
             simpleUpload: {
-              uploadUrl: 'http://localhost:8000/api/web/posts/storeImage'
+              uploadUrl: 'https://main.helmisalsabila.com/api/web/posts/storeImage'
             }
           }
         }
