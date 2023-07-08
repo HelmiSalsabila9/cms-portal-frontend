@@ -1,8 +1,8 @@
 <IfModule mod_rewrite.c>
     RewriteEngine on
 
-    RewriteCond %{HTTPS} !=on
-    RewriteRule ^(.*)$ https://%{HTTP_HOST}%(REQUEST_URI) [L,R=301]
+    RewriteCond %{HTTP_HOST} ^localhost:8000$ [NC]
+    RewriteRule ^(.*)$ https://main.helmisalsabila.com/$1 [L,R=301]
 
     RewriteBase /
     RewriteRule ^index\.html$ - [L]
