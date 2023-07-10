@@ -124,7 +124,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'https://main.helmisalsabila.com/'
+    baseURL: 'http://localhost:8000/'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
